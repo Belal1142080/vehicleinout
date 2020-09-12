@@ -1,0 +1,88 @@
+{% extends 'index.html' %} {% block body %} {% load static %}
+
+<main>
+
+    <!-- slider Area Start-->
+    <div class="slider-area ">
+        <div class="slider-active">
+            <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="{% static 'assets/img/hero/achievement.jpg'%}">
+            </div>
+        </div>
+    </div>
+
+
+    <div style="margin:30px">
+        <div class="pdf-viewer-page js-lazy-load-page display-page" data-lazy-batch="5">
+            <div class="pdf-lazy-load">
+                <div id="pfa" class="pf w0 h0" data-page-no="a">
+                    <div class="pc pca w0 h0">
+                        <div class="t m0 x4 hd yd3 ff1 fs2 fc0 sc0 ls52 ws62" style="text-align: center;"><strong>How does the
+                                    system work?</strong></div>
+                        <div class="t m0 x4 h9 yd4 ff3 fs2 fc0 sc0 ls51 ws13f" style="text-align: center;">The system starts working as soon as RFID labels are acquired from RFID centers.</div>
+                        <div class="t m0 x0 h9 yd5 ff3 fs2 fc0 sc0 ls1e ws140" style="text-align: center;">Label selling centers are located on certain areas of the city which vehicle owners could</div>
+                        <div class="t m0 x0 h9 yd6 ff3 fs2 fc0 sc0 ls36 ws141" style="text-align: center;">easily reach. Upon the purchase of RFID labels, a lot of information concerning the</div>
+                        <div class="t m0 x0 h9 yd7 ff3 fs2 fc0 sc0 ls1b ws104" style="text-align: center;">vehicle is recorded to Vehi<span class="lsa ws142">cleInformation table of RFIDDATA database. In that way, </span></div>
+                        <div class="t m0 x0 h9 yd8 ff3 fs2 fc0 sc0 ls39 ws143" style="text-align: center;">every one of RFID-enabled vehicles will easily be identified and their check-ins and</div>
+                        <div class="t m0 x0 h9 yd9 ff3 fs2 fc0 sc0 ls3a ws144" style="text-align: center;">check-outs to the determined parking lots will be monitored. In this project the RFID</div>
+                        <div class="t m0 x0 h9 y7c ff3 fs2 fc0 sc0 ls58 ws7b" style="text-align: center;">labels were distributed by the central server office.</div>
+                        <div class="t m0 x4 h9 y7d ff3 fs2 fc0 sc0 ls7c ws145" style="text-align: center;">When an RFID-labeled vehicle attempts to<span class="ls3e ws146"> check-in to a parking-lot, the system </span></div>
+                        <div class="t m0 x0 h9 y7e ff3 fs2 fc0 sc0 ls3e ws147" style="text-align: center;">queries if the vehicle is registered to the database or not. If it is a registered vehicle and it</div>
+                        <div class="t m0 x0 h9 y7f ff3 fs2 fc0 sc0 ls3d ws68" style="text-align: center;">has not checked out of an unauthorized RFID-enabled parking-lot, the system will allow</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pdf-page-separator" style="text-align: center;">&nbsp;</div>
+        <div class="pdf-viewer-page js-lazy-load-page display-page" style="text-align: center;" data-lazy-batch="5">
+            <div class="pdf-lazy-load">
+                <div id="pfb" class="pf w0 h0" data-page-no="b">
+                    <div class="pc pcb w0 h0">
+                        <div class="pdf-bg bi x13 yda w5 h13 lazyload" data-bg="profile/Zeydin_Pala/publication/271465664/viewer/AS:190525244182528@1422436166119/background/11.png">
+                            &nbsp;</div>
+                        <div class="t m0 x0 hc y26 ff3 fs0 fc0 sc0 ls55 ws6e"><strong>Utilizing RFID for Smart Parking
+                                    Applications&nbsp;</strong></div>
+                        <div class="t m0 x0 h9 y28 ff3 fs2 fc0 sc0 ls45 ws148">its entrance. Upon the entrance, the vehicles
+                            <span class="ls7 ws149">identification information, entrance date and </span></div>
+                        <div class="t m0 x0 h9 y29 ff3 fs2 fc0 sc0 ls9 ws60">time and current parking-lot title are recorded in the VehicleCirculationInfo table of the</div>
+                        <div class="t m0 x0 h9 y2a ff3 fs2 fc0 sc0 ls7 ws14a">database. The check-in information carries great importance since it will be compared to</div>
+                        <div class="t m0 x0 h9 y2b ff3 fs2 fc0 sc0 ls3e ws147">the check-out information of the vehicle. If a vehicle has made an unauthorized check-out</div>
+                        <div class="t m0 x0 h9 y2c ff3 fs2 fc0 sc0 ls39 ws14b">of a parking-lot, the vehicle will not be able to check-in to any of the RFID-enabled</div>
+                        <div class="t m0 x0 h9 y2d ff3 fs2 fc0 sc0 ls39 ws14c">parking-lots. The only solution for the vehicle to check-in is for the owner to pay the fine</div>
+                        <div class="t m0 x0 h9 y2e ff3 fs2 fc0 sc0 lsb4 ws14d">to the fine office. Upon receiving the approval, the barrier lifts up and initiates the check-in</div>
+                        <div class="t m0 x0 h9 y2f ff3 fs2 fc0 sc0 ls34 wsbc">process.</div>
+                        <div class="t m0 x0 h9 y2f ff3 fs2 fc0 sc0 ls34 wsbc">&nbsp;</div>
+                        <div class="t m0 x0 h9 y2f ff3 fs2 fc0 sc0 ls34 wsbc">&nbsp;</div>
+                        <div class="t m0 x4 h9 ydd ff3 fs2 fc0 sc0 ls45 ws148">When a vehicle drives into the exit area of <span class="ls7a ws14f">the parking-lot to check-out, its identifica-</span></div>
+                        <div class="t m0 x0 h9 yde ff3 fs2 fc0 sc0 ls7a ws150">tion information is queried on the database. If the vehicle is registered to the system and it</div>
+                        <div class="t m0 x0 h9 ydf ff3 fs2 fc0 sc0 ls3d ws151">has not made an unauthorized entry to the parking-lot the check-out process is initiated.</div>
+                        <div class="t m0 x0 h9 ye0 ff3 fs2 fc0 sc0 ls3e ws152">The vehicle's check-out date and time is taken into consideration. The check-out date and</div>
+                        <div class="t m0 x0 h9 ye1 ff3 fs2 fc0 sc0 ls57 ws153">time total are subtracted from check-in date<span class="ls3f ws154"> and time total. The calculated time is con-</span></div>
+                        <div class="t m0 x0 h9 ye2 ff3 fs2 fc0 sc0 ls3f ws155">verted into minutes thus the elapsed time in the parking-lot is determined. Upon the</div>
+                        <div class="t m0 x0 h9 ye3 ff3 fs2 fc0 sc0 ls3e wsb5">check-out, the check-in information of a vehicle is found and updated with check-out in-</div>
+                        <div class="t m0 x0 h9 ye4 ff3 fs2 fc0 sc0 ls3e ws156">formation. The check-out information means check-out date, time, the elapsed parking</div>
+                        <div class="t m0 x0 h9 ye5 ff3 fs2 fc0 sc0 ls39 ws49">time, and the total fee.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pdf-page-separator" style="text-align: center;">&nbsp;</div>
+        <div class="pdf-viewer-page js-lazy-load-page display-page" data-lazy-batch="6">
+            <div class="pdf-lazy-load">
+                <div id="pfc" class="pf w0 h0" data-page-no="c">
+                    <div class="pc pcc w0 h0">
+                        <div class="pdf-bg bi x15 ye6 w6 h14 lazyload" style="text-align: center;" data-bg="profile/Zeydin_Pala/publication/271465664/viewer/AS:190525244182528@1422436166119/background/12.png">
+                            &nbsp;</div>
+                        <div class="t m0 x0 hc y26 ff3 fs0 fc0 sc0 ls46 ws3d" style="text-align: center;">&nbsp;</div>
+                        <div class="t m0 x4 h9 y28 ff3 fs2 fc0 sc0 ls39 ws157" style="text-align: center;">Moreover, the total fee of the elapsed parking time is updated with the previous</div>
+                        <div class="t m0 x0 h9 y29 ff3 fs2 fc0 sc0 ls9 ws158" style="text-align: center;">related info on the database. If the vehicle has made an unauthorized entry to the parking</div>
+                        <div class="t m0 x0 h9 y2a ff3 fs2 fc0 sc0 ls61 wsd2" style="text-align: center;">lot the system does not allow its check-out. In th<span class="ls51 wse9">at case, a fine should be paid to check-out
+                                </span></div>
+                        <div class="t m0 x0 h9 y2b ff3 fs2 fc0 sc0 ls7 ws10" style="text-align: center;">again. The check-out process is initiated by lifting off the barrier.</div>
+                        <div class="t m0 x16 h9 ye7 ff3 fs2 fc0 sc0 ls22 ws8" style="text-align: center;">&nbsp;</div>
+                        <div class="t m0 x17 h9 ye8 ff3 fs2 fc0 sc0 lsb0 ws14e" style="text-align: center;">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>{% endblock %}

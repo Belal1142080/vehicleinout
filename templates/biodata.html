@@ -1,0 +1,36 @@
+{% extends 'index.html' %} {% block body %} {% load static %}
+
+<main>
+
+    <!-- slider Area Start-->
+    <main class="slider-area ">
+        <div class="slider-active">
+            <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="{% static 'assets/img/hero/info.jpg'%}">
+            </div>
+        </div>
+    </main>
+
+
+    <div class="row justify-content-around ">
+        <div class="col-md-6">
+            <!-- backend part -->
+            {% for dest in dests %}
+            <div style="border: 2px solid blue;display: inline-block;" class="mt-5 ml-5">
+                <div style="margin-left: 5px; margin-top: 15px">
+                    <h3 style="text-decoration:underline; text-align:center">{{dest.token}}</h3>
+                    <h5>{{dest.veh}}</h5>
+                    <h5>{{dest.time}}</h5>
+                    <h5>{{dest.location}}</h5>
+                    <h5 style="background-color: blue;">{{dest.desc}}</h5>
+                    <div style=" clear: both;"></div>
+                </div>
+            </div>{% endfor %}
+            <!-- backend part end -->
+        </div>
+    </div>
+</main>
+
+
+
+
+{% endblock %}
