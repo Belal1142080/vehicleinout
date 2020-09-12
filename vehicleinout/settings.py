@@ -82,11 +82,8 @@ WSGI_APPLICATION = 'vehicleinout.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'vehicleinout',
-        'USER': 'postgres',
-        'PASSWORD': 'b4181171100069121',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
