@@ -102,7 +102,11 @@
                                                 <li><a href="about.html">About</a></li>
                                                 <li><a href="employees.html">Members</a></li>
                                                 <li><a href="achievements.html">Project info</a></li>
-
+                                                {% if user.is_authenticated %}
+                                                <li><a href="biodata.html">Data</a> {%else%}
+                                                    <li><a href="accounts/login">Data</a></li>
+                                                    {% endif%}
+                                                </li>
                                                 <li><a href="#">Div</a>
                                                     <ul class="submenu">
                                                         <li><a href="#">7 Inf Div</a></li>
@@ -117,7 +121,12 @@
                                                         <li><a href="#">66 Inf Div</a></li>
                                                     </ul>
                                                 </li>
+                                                {% if user.is_authenticated %}
+                                                <li><a href="accounts/logout">Logout</a></li>
+                                                {%else%}
 
+                                                <li><a href="accounts/login">Login</a></li>
+                                                {% endif%}
                                                 <li><a href="contact.html">Contact</a></li>
                                             </ul>
                                         </div>
