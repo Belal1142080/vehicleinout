@@ -11,4 +11,5 @@ urlpatterns = [
     path('biodata.html', views.biodata, name='biodata'),
     path('insert.html', views.insert, name='insert'),
     
+    
 ]

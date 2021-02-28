@@ -1,10 +1,11 @@
 from django.db import models
 from datetime import *
 
-
-class destination(models.Model):
-    token = models.CharField(max_length=100)
-    veh = models.CharField(max_length=100)
-    time = datetime.now()
+class vehmgt(models.Model):
+    token = models.IntegerField(primary_key=True)
+    veh = models.CharField(max_length=7)
+    time = models.DateTimeField(null=True)
     location = models.CharField(max_length=100)
-    desc = models.TextField()
+   
+    class Meta:
+        db_table="vehlog"
